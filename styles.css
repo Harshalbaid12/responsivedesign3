@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arimo', sans-serif;
+}
+
+
+/* Hero Section */
+.hero{
+   height: 100vh;
+   color: white;
+   background-image: url("images/wallpaper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.overlay{
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+    
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2%;
+    padding-right:10% ;
+    
+}
+
+.navbar h3{
+   
+    flex-grow: 2;
+    padding-left: 10%;
+    z-index: 1;
+}
+
+.navbar p{
+    padding-left: 4%;
+    z-index: 1;
+    font-size: 0.8em;
+
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10% 20%;
+
+}
+.heading p ,h1,button{
+    z-index: 1;
+    margin: 3%;
+}
+
+.heading p{
+font-size: 0.8em;
+}
+
+.btn{
+    padding: 1.5% 3.5%;
+    border-radius: 10px;
+    background-color: #ffeb3bb8;
+    border: 1px solid black;
+}
+
+/* Coureses Section */
+
+#courses{
+    margin-top: 4.5%;
+}
+
+#courses p{
+    font-size: 0.7em;
+}
+
+
+.courses{
+    display: flex;
+    
+}
+
+.box{
+    padding: 2%;
+     margin: 3% 5%;
+    border:3px solid palevioletred ;
+    border-radius: 15px;
+    background-color: #FFFAFA;
+
+}
+
+/* Campus Section*/
+
+#campus{
+    background-color: #F6F3EE	;
+    padding: 1%;
+       margin-top: 2%;
+}
+
+#campus img{
+    width: 25%;
+}
+
+.box2{
+    background-color:#FFFAFA ;
+}
+
+.campusimg1{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 4% 6%;
+    padding: 2% 2%;
+}
+
+.campusimg1 .content{
+
+    justify-self: flex-start;
+    align-self: flex-start;
+    padding-left: 5%;
+    padding-right: 10%;
+}
+
+.campusimg1 img{
+    border:1px solid peachpuff;
+    border-radius: 25px;
+}
+
+.campusimg1 .content p{
+    font-size: 0.7em;
+   
+}
+
+.campusimg1 .content h2{
+    font-size: 1.2em;
+    padding-bottom: 1em;
+   
+}
+
+/* Facilities Section */
+#facilities img{
+    max-width: 90%
+}
+#facilities .img{
+    margin-right: 0;
+}
+
+.facility{
+    width: 25%;
+    padding: 2%;
+}
+.facilities{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 2%;
+    width: 100%;
+   
+}
+
+#facilities p{
+    font-size: 0.7em;
+}
+
+
+/* Recomend Section */
+.recomend{
+    position: relative;
+    height: 50vh;
+    padding-top:5% ;
+}
+
+.recomend h1{
+
+    font-size: 5rem;
+    
+  
+}
+
+.recomend::before{
+    content: "";
+    background-image: url("images/graduation.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+.copyright{
+    font-size: 0.5em;
+    padding-top:5%;
+}
+
+/* Utility Classes */
+.center{
+    text-align: center;
+}
+
+@media screen and (max-width:610px) {
+    
+    .courses{
+        flex-wrap: wrap;
+    }
+    .campusimg1{
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .campusimg1 h2,p{
+
+        text-align: center;
+        
+    }
+    .campusimg1 .content{
+
+        padding:0;
+        
+    }
+
+    #facilities h3{
+        font-size: 0.8em;
+    }
+    
+     
+    .facilities p{
+        text-align: left;
+
+    }
+
+
+
+    .recomend{
+        height: 30vh;
+    }
+
+    .recomend h1{
+        font-size: 2rem;
+    }
+   
+}
+
+@media screen and (max-width:1200px) {
+    
+    .heading{
+        padding-top: 15em;
+    }
+
+   
+}
